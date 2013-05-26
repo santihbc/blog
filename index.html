@@ -1,11 +1,110 @@
 <head>
-  <title>santiherrero</title>
+  <title>Santi Herrero</title>
 </head>
 
 <body>
-  {{renderPage}}
+	<header id='banner'>
+		<div class="container">
+			<img src="images/logo.png" alt="">
+		</div>
+	</header>
+
+	<div class="navbar">
+		<div class="container">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="#">Link</a></li>
+			  <li><a href="#">Link</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id='main' class="container">
+		{{renderPage}}
+	</div>
 </body>
 
-<template name='homePage'>
-	hello world!
+<template name='blogPage'>
+	<div class="wrapper row">
+		<div id='articles' class="col col-lg-10 col-offset-1">{{> articles}}</div>
+		<!-- <div id='sidebar' class="col col-lg-3"></div> -->
+	</div>
+</template>
+
+<template name='articles'>
+	<article class='row'>
+		<div class="col col-lg-12 article-content">
+			<header>
+				<h3>Title goes here man</h3>
+			</header>
+			<section class='content'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+			</section>
+			<footer>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+			</footer>
+		</div>
+	</article>
+
+	<article class='row'>
+		<div class="col col-lg-12 article-content">
+			<header>
+				<h3>Title goes here man</h3>
+			</header>
+			<section class='content'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+			</section>
+			<footer>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+			</footer>
+		</div>
+	</article>
+
+	<article class='row'>
+		<div class="col col-lg-12 article-content">
+			<header>
+				<h3>Title goes here man</h3>
+			</header>
+			<section class='content'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+			</section>
+			<footer>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+			</footer>
+		</div>
+	</article>
+
+	<article class='row'>
+		<div class="col col-lg-12 article-content">
+			<header>
+				<h3>Title goes here man</h3>
+			</header>
+			<section class='content'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ab earum amet rem id! Quasi, tempore odio aliquam veniam et ex cupiditate consequatur perferendis aliquid ut. Impedit sit ipsa quasi.</p>
+			</section>
+			<footer>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+				<span class='label label-info'>tag1</span>
+			</footer>
+		</div>
+	</article>
 </template>

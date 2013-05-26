@@ -1,9 +1,7 @@
 if (Meteor.isClient) {
-
   Meteor.Router.add({
-    '/': 'homePage'
+    '/': 'blogPage'
   });
-
 }
 
 if (Meteor.isServer) {

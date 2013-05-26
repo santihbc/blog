@@ -1,1 +1,68 @@
-/* CSS declarations go here */
+body {
+	background-color: #eee;
+}
+
+#banner {
+	height: 150px;
+	background-color: black;
+
+	.container {
+		padding-left: 25px;
+		padding-top: 25px;
+		img {
+			max-height: 100px;
+		}
+	}
+}
+
+.navbar {
+	margin-bottom: 0px;
+	padding: 0px;
+	border-radius: 0px;
+	background-color: #0047CC;
+	border-bottom: 4px solid #1164FF;
+	.navbar-nav {
+		a { 
+			color: #1164FF;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.active > a,
+		.active > a:hover,
+		.active > a:focus {
+			color: white;
+			background-color: #1164FF;
+			font-weight: normal;
+		}
+	}
+}
+
+#main {
+	.articles {
+
+	}
+	article {
+		margin-top: 50px;
+		padding: 15px;
+		margin-left: 2px;
+		margin-right: 2px;
+		background-color: #fff;
+		border-radius: 5px;
+		border-bottom: 4px solid #ccc;
+
+		.article-content {
+			header {
+				border-bottom: 3px solid #ddd;
+				margin-bottom: 20px;
+			}
+			.content {
+				
+			}
+			footer {
+				border-top: 3px solid #ddd;
+				margin-top: 20px;
+				padding-top: 10px;
+			}
+		}
+	}
+}
