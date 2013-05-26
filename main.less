@@ -5,6 +5,7 @@ body {
 #banner {
 	height: 150px;
 	background-color: black;
+	color: #ddd;
 
 	.container {
 		padding-left: 25px;
@@ -20,7 +21,7 @@ body {
 	padding: 0px;
 	border-radius: 0px;
 	background-color: #0047CC;
-	border-bottom: 4px solid #1164FF;
+	border-bottom: 4px solid #0038A3;
 	.navbar-nav {
 		a { 
 			color: #1164FF;
@@ -38,31 +39,68 @@ body {
 }
 
 #main {
-	.articles {
+	#articles {
+		article {
+			border: 1px solid #ddd;
+			margin-top: 50px;
+			padding: 15px;
+			margin-left: 2px;
+			margin-right: 2px;
+			background-color: #fff;
+			border-radius: 5px;
+			border-bottom: 4px solid #ccc;
 
-	}
-	article {
-		margin-top: 50px;
-		padding: 15px;
-		margin-left: 2px;
-		margin-right: 2px;
-		background-color: #fff;
-		border-radius: 5px;
-		border-bottom: 4px solid #ccc;
+			.article-content {
+				header {
+					border-bottom: 3px solid #ddd;
+					margin-bottom: 20px;
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+				.content {
+					
+				}
+				footer {
+					border-top: 3px solid #ddd;
+					margin-top: 20px;
+					padding-top: 10px;
 
-		.article-content {
-			header {
-				border-bottom: 3px solid #ddd;
-				margin-bottom: 20px;
-			}
-			.content {
-				
-			}
-			footer {
-				border-top: 3px solid #ddd;
-				margin-top: 20px;
-				padding-top: 10px;
+					.label {
+						background-color: #1164FF;
+						border-bottom: 2px solid #0047CC;
+					}
+				}
 			}
 		}
 	}
+
+	.load-articles {
+		margin-top: 50px;
+		border-top: 1px dashed #ccc;
+		.pager li {
+
+			& > a:hover,
+			& > a:focus {
+				background-color: #0047CC;
+			}
+			& > a,
+			& > span {
+				background-color: #1164FF;
+				border-radius: 5px;
+				padding: 10px 15px;
+				font-weight: bold;
+				color: white;
+				border: 0px;
+				border-bottom: 4px solid #0047CC;
+			}
+		}
+	}
+	
+}
+
+#footer {
+	min-height: 150px;
+	margin-top: 25px;
+	background-color: black;
+	border-top: 4px solid grey;
 }
